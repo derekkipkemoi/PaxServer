@@ -3,7 +3,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const userDetailsRoute = require('./routes/User')
 mongoose.set('strictQuery', false)
-const uri = 'mongodb+srv://cynthia90:30338359@cluster1.jipxy0x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1'
+const uri = 'mongodb+srv://kipkemoi:30338359@paxfull.gf8spvf.mongodb.net/?retryWrites=true&w=majority&appName=Paxfull'
 const port = 5000
 
 const app = express()
