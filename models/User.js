@@ -8,6 +8,10 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true
+  },
+  OTP: {
+    type: String,
+    required: false
   }
 });// export the model
 module.exports = mongoose.model('User', userSchema);

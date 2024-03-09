@@ -4,7 +4,8 @@ exports.createUser = (req, res, next) => {
     // get post's title and content from the request
     const user = new User({
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        OTP: ""
     })
 
     user.save().then(userSaved => {
