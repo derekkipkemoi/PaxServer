@@ -3,5 +3,5 @@ const userController = require('../controllers/User')
 const router = express.Router();// create a router
 
 
-router.post('/userDetails', userController.createUser);// POST /feed/post will be handled right now
+router.post('/userDetails', userController.createUser);// POST /feed/post will be handled right nowz
 module.exports = router;// export the router

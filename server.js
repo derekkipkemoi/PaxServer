@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const userDetailsRoute = require('./routes/User')
+const updateDetailsRoute = require('./routes/UpdateUser')
 mongoose.set('strictQuery', false)
 const uri = 'mongodb+srv://kipkemoi:30338359@paxfull.gf8spvf.mongodb.net/?retryWrites=true&w=majority&appName=Paxfull'
 const port = 5000
@@ -11,6 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/user', userDetailsRoute)
+app.use('/user', updateDetailsRoute)
 
 const start = async() => {
     try{
